@@ -17,6 +17,19 @@ namespace PLRDAL
         }
 
 
+        public static string ReturnSuccess(object aData)
+        {
+            return Newtonsoft.Json.JsonConvert.SerializeObject(
+                new PLR_Response
+                {
+                    PLRVersion = 1,
+                    Success = true,
+                    ErrorMsg = "",
+                    Data = aData
+                }
+                , Formatting.Indented);
+        }
+
 
         public static string ReturnError(string MensajeError)
         {
