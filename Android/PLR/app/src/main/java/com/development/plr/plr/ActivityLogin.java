@@ -21,7 +21,7 @@ import java.util.HashMap;
 
 public class ActivityLogin extends AppCompatActivity {
     //para JSON
-
+//commentario
     private static String url = "http://192.168.1.12/plrdal/Default.aspx";
     private static String nodes; //todo make static
 
